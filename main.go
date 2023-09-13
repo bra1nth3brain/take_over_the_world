@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-var EncryptedFlag string
+var EncryptedFlag string = "k33p_th1s_secr3t"
 
 func DecryptMessage(key []byte, message string) (string, error) {
 	cipherText, err := base64.StdEncoding.DecodeString(message)
